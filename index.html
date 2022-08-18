@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe</title>
+    <style>
+
+        h1 {
+            text-align: center;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.342);
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(137, 43, 226, 0.603);
+            color: white;
+        }
+
+        #primeira-secao {
+            width: 400px;
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+            border-radius: 30px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        #primeira-secao:active {
+            background-color: gray;
+        }
+
+        #segunda-secao {
+            width: 400px;
+            background-color: black;
+            padding: 5px;
+            margin: 5px auto;
+            text-align: center;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        #segunda-secao:active {
+            background-color: gray;
+        }
+
+        #terceira-secao {
+            width: 400px;
+            background-color: black;
+            padding: 5px;
+            margin: 5px auto;
+            text-align: center;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        #terceira-secao:active {
+            background-color: gray;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function clicar() {
+            var link = document.getElementById('link')
+            var acesso = window.prompt('Digite acesso');
+
+            if (acesso === 'cleuda10') {
+                alert('Bem vindo ' + acesso )
+                window.open('https://felipe-monte.github.io/Maquineta/', '_blank');
+                
+            } else {
+                alert('Acesso negado')
+            }
+
+        }
+
+        
+    </script>
+</head>
+<body>
+
+    <h1>Escolha alguma das opções</h1>
+    
+    <a id="link" onclick="clicar()">
+        <section id="primeira-secao">
+            <p>Maquineta</p>
+        </section>
+    </a>
+
+    <a href="#">
+        <section id="segunda-secao">
+            <p>[LINK VAZIO]</p>
+        </section>
+    </a>
+
+    <a href="#">
+        <section id="terceira-secao">
+            <p>[lINK VAZIO]</p>
+        </section>
+    </a>
+
+</body>
+</html>
