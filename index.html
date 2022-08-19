@@ -32,6 +32,7 @@
 
         #primeira-secao:active {
             background-color: gray;
+            border: 1px solid white;
         }
 
         #segunda-secao {
@@ -44,7 +45,7 @@
             cursor: pointer;
         }
 
-        #segunda-secao:active {
+        #segunda-secao:active  {
             background-color: gray;
         }
 
@@ -77,14 +78,15 @@
             var link = document.getElementById('link')
             var acesso = window.prompt('Digite o acesso:');
 
-            if (acesso === 'cleuda10  ✅') {
-                alert('Bem vindo ' + acesso )
+            if (acesso === 'cleuda10') {
+                alert('Bem vindo ' + acesso + ' ✅')
                 window.open('https://felipe-monte.github.io/Maquineta/', '_blank');
                 
-            } else if (acesso == '') {
+            } else if (acesso == 0) {
+                alert('Campo em branco!')
+            } else {
                 alert('Acesso negado ❌')
-            }
-
+            }  
         }
 
         
