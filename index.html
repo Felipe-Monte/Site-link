@@ -79,13 +79,21 @@
             margin-top: 250px;
         }
 
+        img {
+            border-radius: 50%;
+            width: 150px;
+            display: block;
+            margin: 0 auto 15px;
+            border: 2px solid white;
+        }
+
     </style>
     <script>
         function clicar() {
-            var link = document.getElementById('link')
             var acesso = window.prompt('Digite o acesso:');
+            const cliente1 = 'cleuda10'
 
-            if (acesso === 'cleuda10') {
+            if (acesso === cliente1) {
                 alert('Bem vindo ✅')
                 window.open('https://felipe-monte.github.io/Maquineta/', '_blank');
                 
@@ -103,6 +111,8 @@
 
     <h1>Escolha alguma das opções</h1>
     
+    <img src="imagens/foto-felipe2.jpg" alt="felipe">
+
     <a id="link" onclick="clicar()">
         <section id="primeira-secao">
             <p>Maquineta</p>
